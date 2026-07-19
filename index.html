@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FIFA AI MatchMate – The GenAI-powered smart stadium experience for FIFA World Cup 2026. Navigate, discover, and experience the future of football.">
+  <meta property="og:title" content="FIFA AI MatchMate – Smart Stadium 2026">
+  <title>FIFA AI MatchMate – Smart Stadium Experience | FIFA World Cup 2026</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/landing.css">
+</head>
+<body>
+
+<!-- ======================== NAVBAR ======================== -->
+<nav class="landing-nav" id="landing-nav">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">⚽</div>
+    <div class="nav-logo-text">
+      <span class="nav-logo-title">FIFA AI MatchMate</span>
+      <span class="nav-logo-sub">World Cup 2026</span>
+    </div>
+  </a>
+  <ul class="nav-links hide-mobile">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+  <div class="nav-actions">
+    <a href="auth.html" class="btn btn-outline btn-sm hide-mobile">Sign In</a>
+    <a href="auth.html" class="btn btn-primary btn-sm">Get Started</a>
+  </div>
+</nav>
+
+<!-- ======================== HERO ======================== -->
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <div class="hero-pitch"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+    <div class="particles" id="particles"></div>
+    <div class="football-bg" id="football-bg"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="hero-badge animate-pulse-glow">
+      <span>⚡</span>
+      <span>Powered by Generative AI · FIFA World Cup 2026</span>
+    </div>
+
+    <h1 class="hero-title">
+      Experience the<br>
+      <span class="highlight">Smart Stadium</span><br>
+      of the Future
+    </h1>
+
+    <p class="hero-subtitle">
+      Your AI companion for the ultimate FIFA World Cup 2026 experience.
+      Real-time navigation, crowd intelligence, instant answers, and seamless stadium access — all powered by GenAI.
+    </p>
+
+    <div class="hero-cta">
+      <a href="auth.html#guest" class="btn btn-primary btn-lg" id="cta-explore">
+        🏟️ Explore Stadium
+      </a>
+      <a href="auth.html" class="btn btn-outline btn-lg" id="cta-ai">
+        🤖 Ask AI
+      </a>
+      <a href="auth.html" class="btn btn-ghost btn-lg" id="cta-crowd">
+        📊 Live Crowd
+      </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div class="hero-stat" data-animate>
+        <span class="hero-stat-value" id="stat-capacity">82,500</span>
+        <span class="hero-stat-label">Stadium Capacity</span>
+      </div>
+      <div class="hero-stat" data-animate>
+        <span class="hero-stat-value" id="stat-crowd">71,243</span>
+        <span class="hero-stat-label">Current Crowd</span>
+      </div>
+      <div class="hero-stat" data-animate>
+        <span class="hero-stat-value" id="stat-gates">12</span>
+        <span class="hero-stat-label">Entry Gates</span>
+      </div>
+      <div class="hero-stat" data-animate>
+        <span class="hero-stat-value" id="stat-ai">2,847</span>
+        <span class="hero-stat-label">AI Recommendations</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll to explore</span>
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+      <path d="M10 14l-5-5h10l-5 5z"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ======================== FEATURES ======================== -->
+<section class="section" id="features">
+  <div style="text-align:center;max-width:600px;margin:0 auto 3rem">
+    <span class="section-label">⚡ AI-Powered Modules</span>
+    <h2 class="section-heading">Everything You Need<br>for the <span class="text-gradient">Perfect Match Day</span></h2>
+    <p class="section-desc" style="margin:0 auto">
+      14 intelligent modules that transform your stadium experience — from AI-guided navigation to real-time crowd intelligence.
+    </p>
+  </div>
+
+  <div class="features-grid">
+    <!-- Feature Cards -->
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-blue" style="background:var(--color-neon-blue-dim)">🤖</div>
+      <h3 class="feature-title">AI Stadium Assistant</h3>
+      <p class="feature-desc">Voice-powered GenAI chatbot. Ask anything about seats, gates, food, transport, emergency — in 8 languages with instant responses.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-green" style="background:var(--color-neon-green-dim)">🗺️</div>
+      <h3 class="feature-title">Smart Navigation</h3>
+      <p class="feature-desc">Interactive stadium map with real-time routing. AI automatically reroutes you around congestion zones and finds optimal paths.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-purple" style="background:rgba(168,85,247,0.15)">🌡️</div>
+      <h3 class="feature-title">Live Crowd Intelligence</h3>
+      <p class="feature-desc">Real-time heatmap with AI crowd prediction. Know where to go 30 minutes before congestion even happens.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-yellow" style="background:rgba(255,215,0,0.12)">🚇</div>
+      <h3 class="feature-title">Transportation Assistant</h3>
+      <p class="feature-desc">AI recommends fastest routes via metro, bus, taxi, rideshare, or walking with live traffic data and cost estimates.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-blue" style="background:var(--color-neon-blue-dim)">♿</div>
+      <h3 class="feature-title">Accessibility Assistant</h3>
+      <p class="feature-desc">Dedicated module for accessibility needs — wheelchair navigation, voice guidance, large font, high contrast, emergency help.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-green" style="background:var(--color-neon-green-dim)">🌐</div>
+      <h3 class="feature-title">Multilingual AI Translator</h3>
+      <p class="feature-desc">Speak, translate, and hear responses in 8 languages. Break language barriers instantly at the world's biggest event.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-green" style="background:rgba(0,255,136,0.1)">🌱</div>
+      <h3 class="feature-title">Sustainability Dashboard</h3>
+      <p class="feature-desc">Track carbon savings, renewable energy, recycling rates, and your personal green score at the world's most sustainable World Cup.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-red" style="background:rgba(255,71,87,0.12)">🚨</div>
+      <h3 class="feature-title">Emergency Response</h3>
+      <p class="feature-desc">One-tap emergency buttons for medical, fire, security, and evacuation. AI instantly guides you to safety with optimized routes.</p>
+    </div>
+
+    <div class="feature-card" data-animate>
+      <div class="feature-icon icon-wrap-purple" style="background:rgba(168,85,247,0.12)">📊</div>
+      <h3 class="feature-title">AI Analytics</h3>
+      <p class="feature-desc">Beautiful real-time dashboards for organizers — crowd trends, gate usage, food demand, transport load, and energy consumption.</p>
+    </div>
+  </div>
+
+  <!-- Extra AI Features highlight -->
+  <div style="margin-top:3rem;background:var(--gradient-card);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:2rem">
+    <h3 style="font-family:var(--font-display);font-size:1.3rem;font-weight:800;margin-bottom:1.5rem;text-align:center">
+      ✨ Extra <span class="text-gradient">AI Features</span>
+    </h3>
+    <div class="grid-3">
+      <div style="text-align:center;padding:1.25rem">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🗓️</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem">AI Itinerary Generator</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted)">Personalized match-day plan tailored to your preferences</div>
+      </div>
+      <div style="text-align:center;padding:1.25rem">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🍔</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem">AI Food Recommendation</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted)">Shortest queues + best food based on crowd data</div>
+      </div>
+      <div style="text-align:center;padding:1.25rem">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🧠</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem">AI Match Companion</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted)">Live trivia, player stats, and match insights</div>
+      </div>
+      <div style="text-align:center;padding:1.25rem">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🔮</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem">AI Crowd Prediction</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted)">Predict congestion 30 minutes before it happens</div>
+      </div>
+      <div style="text-align:center;padding:1.25rem">
+        <div style="font-size:2rem;margin-bottom:0.5rem">⏱️</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem">Smart Queue Optimization</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted)">Always directed to the shortest queue at any point</div>
+      </div>
+      <div style="text-align:center;padding:1.25rem">
+        <div style="font-size:2rem;margin-bottom:0.5rem">🛍️</div>
+        <div style="font-weight:700;font-size:0.95rem;margin-bottom:0.25rem">Merchandise Recommendation</div>
+        <div style="font-size:0.8rem;color:var(--color-text-muted)">Find official stores with best availability</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== TESTIMONIALS ======================== -->
+<section class="testimonials-section" id="testimonials">
+  <div style="text-align:center;max-width:600px;margin:0 auto 3rem">
+    <span class="section-label">💬 What People Say</span>
+    <h2 class="section-heading text-center">
+      Loved by <span class="text-gradient">Fans & Organizers</span>
+    </h2>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card" data-animate>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">The AI chatbot found my seat in seconds and navigated me around a huge crowd at Gate D. Absolutely incredible technology for a World Cup event!</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">MC</div>
+        <div>
+          <div class="testimonial-name">Marco Carvalho</div>
+          <div class="testimonial-role">🇧🇷 Brazil Fan · MetLife Stadium</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-animate>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">As an organizer, the live crowd analytics dashboard is a game-changer. We prevented three crowd incidents before they happened thanks to AI predictions.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">SL</div>
+        <div>
+          <div class="testimonial-name">Sarah Liu</div>
+          <div class="testimonial-role">🏟️ Event Operations Director</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-animate>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">The multilingual translator helped me connect with fans from 6 different countries. I spoke Spanish, they heard English — magic moment at the World Cup!</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">JR</div>
+        <div>
+          <div class="testimonial-name">Juan Rodriguez</div>
+          <div class="testimonial-role">🇦🇷 Argentina Fan · Los Angeles</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-animate>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">The accessibility module made it possible for my father in a wheelchair to enjoy his first World Cup match. The AI routing was flawless and the staff were perfectly coordinated.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">AK</div>
+        <div>
+          <div class="testimonial-name">Aiko Kobayashi</div>
+          <div class="testimonial-role">🇯🇵 Japan Fan · New York</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-animate>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">The sustainability dashboard showed me in real-time how taking the metro saved 2.4kg of CO₂. Made me feel good about being part of something bigger than football.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">EH</div>
+        <div>
+          <div class="testimonial-name">Emma Hoffman</div>
+          <div class="testimonial-role">🇩🇪 Germany Fan · Eco Advocate</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-card" data-animate>
+      <div class="testimonial-quote">"</div>
+      <p class="testimonial-text">As a security volunteer, the real-time alerts and AI incident prediction helped our team respond 4x faster than any previous event. This is the future of event management.</p>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">OM</div>
+        <div>
+          <div class="testimonial-name">Omar Mansour</div>
+          <div class="testimonial-role">🔐 Head of Security · MetLife Stadium</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== CTA SECTION ======================== -->
+<section style="padding:4rem 2rem;text-align:center" id="about">
+  <div style="max-width:700px;margin:0 auto;background:var(--gradient-card);border:1px solid var(--color-border);border-radius:var(--radius-xl);padding:3rem;position:relative;overflow:hidden">
+    <div style="position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(0,212,255,0.08) 0%,transparent 70%);pointer-events:none"></div>
+    <div style="position:relative">
+      <span class="section-label">🚀 Ready to Begin?</span>
+      <h2 style="font-family:var(--font-display);font-size:2.2rem;font-weight:900;margin:0.75rem 0 1rem;line-height:1.2">
+        Your <span class="text-gradient">AI-Powered</span><br>Match Day Awaits
+      </h2>
+      <p style="color:var(--color-text-secondary);margin-bottom:2rem;font-size:1rem;line-height:1.7">
+        Join thousands of fans, volunteers, and organizers already using FIFA AI MatchMate to transform their World Cup 2026 experience.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap">
+        <a href="auth.html" class="btn btn-primary btn-lg">
+          ⚽ Get Started Free
+        </a>
+        <a href="auth.html#guest" class="btn btn-outline btn-lg">
+          👁️ Continue as Guest
+        </a>
+      </div>
+      <p style="font-size:0.78rem;color:var(--color-text-muted);margin-top:1.25rem">
+        No credit card required · Available in 8 languages · Works offline
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== FOOTER ======================== -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-logo" style="text-decoration:none">
+        <div class="nav-logo-icon">⚽</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-title">FIFA AI MatchMate</span>
+          <span class="nav-logo-sub">World Cup 2026</span>
+        </div>
+      </a>
+      <p>The world's first GenAI-powered smart stadium platform for the FIFA World Cup 2026. Transforming the beautiful game with intelligent technology.</p>
+      <div class="footer-socials">
+        <a href="#" class="footer-social-btn">𝕏</a>
+        <a href="#" class="footer-social-btn">in</a>
+        <a href="#" class="footer-social-btn">f</a>
+        <a href="#" class="footer-social-btn">▶</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Platform</div>
+      <ul class="footer-links">
+        <li><a href="auth.html">AI Assistant</a></li>
+        <li><a href="auth.html">Smart Navigation</a></li>
+        <li><a href="auth.html">Crowd Intelligence</a></li>
+        <li><a href="auth.html">Transportation</a></li>
+        <li><a href="auth.html">Analytics</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Solutions</div>
+      <ul class="footer-links">
+        <li><a href="auth.html">For Fans</a></li>
+        <li><a href="auth.html">For Organizers</a></li>
+        <li><a href="auth.html">For Volunteers</a></li>
+        <li><a href="auth.html">For Security</a></li>
+        <li><a href="auth.html">Accessibility</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="footer-col-title">Company</div>
+      <ul class="footer-links">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">FIFA 2026</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-bottom-text">© 2026 FIFA AI MatchMate. Built for the FIFA World Cup 2026 Global Hackathon.</span>
+    <span class="footer-bottom-text">🏆 Powered by Generative AI</span>
+  </div>
+</footer>
+
+<!-- Toast Container -->
+<div id="toast-container" class="toast-container"></div>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    Toast.init();
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', () => {
+      document.getElementById('landing-nav')?.classList.toggle('scrolled', window.scrollY > 30);
+    });
+
+    // Particle system
+    createParticles(document.getElementById('particles'));
+    createFootballAnimations(document.getElementById('football-bg'));
+
+    // Scroll animations
+    initScrollAnimations();
+
+    // Animate hero stats
+    setTimeout(() => {
+      const statData = [
+        { id: 'stat-capacity', val: 82500 },
+        { id: 'stat-crowd', val: 71243 },
+        { id: 'stat-gates', val: 12 },
+        { id: 'stat-ai', val: 2847 }
+      ];
+      statData.forEach(({ id, val }) => {
+        const el = document.getElementById(id);
+        if (el) animateCounter(el, val, 2000);
+      });
+    }, 500);
+
+    // CTA redirect
+    document.getElementById('cta-explore')?.addEventListener('click', (e) => {
+      e.preventDefault();
+      Auth.login({ name: 'Guest User', email: 'guest@fifa2026.com', role: 'Fan', isGuest: true });
+      window.location.href = 'dashboard.html#overview';
+    });
+
+    // Welcome toast
+    setTimeout(() => {
+      Toast.show('⚽ Welcome to FIFA AI MatchMate!', 'World Cup 2026 Smart Stadium Experience', 'blue', 5000);
+    }, 1500);
+  });
+</script>
+</body>
+</html>
